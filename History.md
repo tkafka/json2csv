@@ -1,3 +1,8 @@
+3.0.0 / 2015-03-23
+==================
+
+ * rewritten from scratch to fulfill a single goal
+
 2.2.1 / 2013-11-10
 ==================
 
