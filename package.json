@@ -1,7 +1,7 @@
 {
-  "name": "json2csv",
+  "name": "json2csv-tk",
   "preferGlobal": "true",
-  "version": "2.2.1",
+  "version": "3.0.0",
   "description": "Convert json to csv with column titles",
   "keywords": [
     "json",
@@ -12,32 +12,30 @@
     "parse"
   ],
   "author": {
-    "name": "Mirco Zeiss",
-    "email": "mirco.zeiss@gmail.com",
-    "twitter": "zeMirco"
+    "name": "Tomas Kafka",
+    "email": "tk@tomaskafka.com",
+    "twitter": "keff85"
   },
   "bin": {
     "json2csv": "./bin/json2csv.js"
   },
-  "main": "./lib/json2csv.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zeMirco/json2csv"
+    "url": "https://github.com/tkafka/json2csv"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec",
     "format": "node ./node_modules/js-beautify/js/bin/js-beautify.js lib/json2csv.js test/test.js package.json -r --config js-beautify.json"
   },
   "dependencies": {
-    "commander": "~1.0.5",
-    "cli-table": "~0.2.0",
-    "async": "~0.2.9"
+    "bluebird": "^2.9.14",
+    "commander": "^2.7.1",
+    "objutils": "0.0.9"
   },
   "devDependencies": {
     "mocha": "~1.14.0",
     "should": "~2.0.2",
     "async": "~0.2.9",
     "js-beautify": "~1.4.2"
-
   }
 }
